@@ -61,14 +61,15 @@ function changeColor() {
 let i = 0;
 function addToList() {
   currentToDo.push(taskInput.value);
-  document.getElementById("listSection").insertAdjacentHTML(
+  document.querySelector(".containerTodo").insertAdjacentHTML(
       "beforeend",
       ` <div class="form-check">
           <input class="form-check-input" type="checkbox" onclick="deleteFromlist(this.id)"  value="" id="task${i}">
           <label class="form-check-label" id="task${i}label" for="flexCheckDefault">
             ${taskInput.value}
+            </div> <hr style="width:95%;">
           </label>
-        </div> <hr>`
+        `
     );
   i++;
   taskInput.value = null;
@@ -218,4 +219,5 @@ modalButton.addEventListener("click", (event) => {
 longBreakButton.addEventListener("click", (event) => {
   startTimerV2(9, 59, true);
 });
+
 
