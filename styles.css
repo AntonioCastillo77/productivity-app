@@ -1,0 +1,264 @@
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+#nav {
+  background-color: #22cc9d;
+}
+
+.nav-item {
+  color: white;
+  font-size: 1.2rem;
+}
+
+header{
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 1005;
+  height: 80px;
+}
+
+header h4{
+  position: absolute;
+  left: 10%;
+  bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+.intro{
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #22cc9d;
+  transition: 1s;
+}
+
+.logo-header{
+  position:absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffff;
+}
+
+.logo{
+  position: relative;
+  display: inline-block;
+  bottom: -20px;
+  opacity: 0;
+  font-size: 5rem;
+}
+
+.logo.active{
+  bottom: 0;
+  opacity: 1;
+  transition: ease-in-out 0.5s;
+}
+
+.logo.fade{
+  bottom: 150px;
+  opacity: 0;
+  transition: ease-in-out 0.5s;
+}
+
+#listSection{
+  text-align: center;
+   width: 30%;
+   padding-top: 3%;
+}
+
+
+/* center elements of the main container */
+
+#centerForm {
+	display:flex;
+	justify-content: center;
+}
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+    display: flex;
+    align-items: center;
+  }
+
+  .btn{
+    background-color:black;
+    color: #ffff;
+  }
+
+ h1,p{
+   text-align: center;
+ }
+
+#outer {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+}
+
+.container{
+  border-radius: 1.5rem;
+}
+#mainContainer{
+  -webkit-box-shadow: 1px 14px 21px 3px #B0B0B0; 
+  box-shadow: 1px 14px 21px 3px #B0B0B0;
+  background-color:#22cc9d;
+  padding: 2% 2%;
+  width: 40%;
+}
+
+.containerTodo {
+  -webkit-box-shadow: 1px 14px 21px 3px #B0B0B0; 
+  box-shadow: 1px 14px 21px 3px #B0B0B0;
+  background-color:#22cc9d;
+   padding: 2% 2%;
+  width: 40%;
+  margin-bottom: 3%;
+}
+
+#outerCircle{
+  background-color: white;
+  border-radius: 50%;
+  width: 25rem;
+  height: 25rem;
+}
+
+#timerText{
+  padding-top: 8rem;
+  text-align: center; 
+  font-size: 7rem;
+}
+
+#timerControllButtons {
+  background-color: white;
+}
+
+#timerControllButtonsDivision {
+  border-right: 3px solid; 
+  border-color:lightgray;
+}
+
+#startTimer,#pauseTimer {
+  font-size: 2em;
+}
+
+#information {
+  background-color: #22cc9d; 
+  padding: 10%; 
+  text-align: center;
+}
+
+#tomato {
+  width: 50%;
+}
+
+#tutorialRow {
+  margin-bottom: 10%;
+}
+
+#instructionsRow {
+  margin-top: 10%;
+}
+
+#tutorialText, #instructionsCol {
+  border-radius: 1.2rem; 
+  padding: 4%; 
+  border: 5px solid;
+}
+
+/* hover efectos botones */ 
+
+.link{
+	padding: 15px 30px;
+	margin: 10px;
+	display: inline-block;
+	color: #000;
+  text-decoration: none;
+}
+
+.link:hover{
+	text-decoration: none;
+	color: #000;
+}
+
+#dropdownMenuButton1{
+  display: flex;
+  margin: auto;
+  color: black;
+}
+
+/*===================*/
+/* FLOAT
+/*===================*/
+
+.float-on-hover {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.float-on-hover:hover, .float-on-hover:focus, .float-on-hover:active {
+  -webkit-transform: translateY(-8px);
+  transform: translateY(-8px);
+}
+
+.pomodoroTutorial li{
+  padding-top: 5%;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+/*===================*/
+/* responsive vista mobile
+/*===================*/
+
+@media screen and (max-width: 1104px) {
+  #mainContainer{
+    width: 60%;
+  }
+  #timerText{
+    font-size: 6rem;
+  }
+}
+
+@media screen and (max-width: 716px) {
+  #mainContainer{
+    width: 70%;
+  }
+  #outerCircle{
+    width: 15rem;
+    height: 15rem;
+  }
+  #timerText{
+    padding-top: 5rem;
+    font-size: 3rem;
+  }
+}
