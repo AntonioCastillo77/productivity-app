@@ -118,7 +118,7 @@ header h4{
 }
 
 .container{
-  border-radius: 1.5rem;
+  border-radius: 20px;
 }
 #mainContainer{
   -webkit-box-shadow: 1px 14px 21px 3px #B0B0B0; 
@@ -132,9 +132,14 @@ header h4{
   -webkit-box-shadow: 1px 14px 21px 3px #B0B0B0; 
   box-shadow: 1px 14px 21px 3px #B0B0B0;
   background-color:#22cc9d;
-   padding: 2% 2%;
+  padding: 2% 2%;
   width: 40%;
   margin-bottom: 3%;
+  border-radius: 10px;
+}
+
+.form-check-label{
+  color: white;
 }
 
 #outerCircle{
@@ -249,9 +254,9 @@ header h4{
   }
 }
 
-@media screen and (max-width: 716px) {
+@media screen and (max-width: 600px) {
   #mainContainer{
-    width: 70%;
+    width: 95%;
   }
   #outerCircle{
     width: 15rem;
@@ -260,5 +265,9 @@ header h4{
   #timerText{
     padding-top: 5rem;
     font-size: 3rem;
+  }
+  .containerTodo{
+    width: 90%;
+    margin-bottom: 10%;
   }
 }
